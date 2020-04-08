@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Projet : Loto</title>
+	</head>
+	<body>
+		<h1>Bienvenue sur Projet Loto</h1>
+		<h2>Formulaire d'inscription</h2>
+		<form id="myForm" method="POST" onsubmit="return checkLoto()">
+			<div>
+				<label for="firstname">Prénom :</label>
+				<input type="text" id="firstname" name="firstname" placeholder="Paul">
+			</div>
+			<div>
+				<label for="lastname">Nom :</label>
+				<input type="text" id="lastname" name="lastname" placeholder="Dupont">
+			</div>
+			<div>
+				<label for="email">Email :</label>
+				<!-- type="email" -->
+				<input type="text" id="email" name="email" placeholder="paul.dupont@gmail.com">
+			</div>
+			<div>
+				<label for="">Choisissez 5 numéros et 1 numéro chance :</label>
+				<input id = "lotoNumber1" type="number" value="0" min="1" max="49">
+				<input id = "lotoNumber2" type="number" value="0" min="1" max="49">
+				<input id = "lotoNumber3" type="number" value="0" min="1" max="49">
+				<input id = "lotoNumber4" type="number" value="0" min="1" max="49">
+				<input id = "lotoNumber5" type="number" value="0" min="1" max="49">
+				<input id = "lotoNumber6" type="number" value="0" min="1" max="10">
+			</div>
+			<div>
+				<button type="submit">Valider</button>
+			</div>
+		</form>
+		<script src="index.js"></script>
+	</body>
+</html>
